@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_29" class="java.beans.XMLDecoder"> 
+ <object class="com.horstmann.violet.ClassDiagramGraph"> 
+  <void method="addNode"> 
+   <object class="com.horstmann.violet.ClassNode"> 
+    <void property="attributes"> 
+     <void property="text"> 
+      <string>- bool expansion;
+- SimpleXMLElement xml;
+- string rms;
+- [int] playerGods;
+- [int] playerTeams;</string> 
+     </void> 
+    </void> 
+    <void property="methods"> 
+     <void property="text"> 
+      <string>+ Parser __construct(string filePath);
++ SimpleXMLElement getXml();
++ string getRandomMapScript();
++ string getGameType(); //AoM or AoT
++ string getMapName();
++ int getPointOfView();
++ int getTimestamp();
++ string getGameDate();
++ string getMapSize(); //Normal or Large
++ string getGameMode(); //Supremacy, Deathmatch, ...
++ int getMapSeed();
++ int getNumPlayers();
++ [string] getAllPlayers();
++ float getPlayerRating(string player);
++ string getPlayerType(string player); //Human, AI, Observer
++ int getChosenPlayerTeam(string player); //could be &quot;?&quot;
++ int getPlayerTeam(string player); //actual team
++ string getCombinedPlayerTeam(string player); //actual team + ? indicator
++ [string] getPlayersOnTeam(int team);
++ int getNumTeams();
++ [int] getAllTeams();
++ int getPlayerGodID(string player);
++ string getPlayerGod(string player);
++ int getPlayerNumber(string player);
++ string getPlayerName(int playerNumber);
+- string getGameModeName(int modeID);
+- string getTypeName(int typeID);
+- string getGodName(int godID);
+- void parse(string filePath);</string> 
+     </void> 
+    </void> 
+    <void property="name"> 
+     <void property="text"> 
+      <string>parser.php</string> 
+     </void> 
+    </void> 
+   </object> 
+   <object class="java.awt.geom.Point2D$Double"> 
+    <void method="setLocation"> 
+     <double>258.0</double> 
+     <double>36.0</double> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 
